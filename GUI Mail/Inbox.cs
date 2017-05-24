@@ -39,6 +39,11 @@ namespace GUI_Mail
                 PlaceFolder(folder);
             }
 
+            /*foreach (Button control in Controls.OfType<Button>())
+            {
+                control.BackColor = Color.Gray;
+                control.ForeColor = Color.White;
+            }*/
         }
 
         private void Inbox_Load(object sender, EventArgs e)

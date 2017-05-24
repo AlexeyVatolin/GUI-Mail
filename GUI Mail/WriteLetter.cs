@@ -8,6 +8,7 @@ namespace GUI_Mail
         public WriteLetter()
         {
             InitializeComponent();
+            letterText.Text = "\n\n" + DataWorker.CurrentUser.Signature;
         }
 
         private void send_Click(object sender, EventArgs e)

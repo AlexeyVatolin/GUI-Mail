@@ -36,6 +36,7 @@ namespace GUI_Mail
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openContactsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openContactsInWordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -56,7 +57,6 @@ namespace GUI_Mail
             this.mailMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.moveToToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openInWordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openContactsInWordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.foldersLayoutPanel.SuspendLayout();
             this.buttonsPanel.SuspendLayout();
@@ -93,6 +93,13 @@ namespace GUI_Mail
             this.openContactsToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
             this.openContactsToolStripMenuItem.Text = "Open contacts in Excel";
             this.openContactsToolStripMenuItem.Click += new System.EventHandler(this.openContactsToolStripMenuItem_Click);
+            // 
+            // openContactsInWordToolStripMenuItem
+            // 
+            this.openContactsInWordToolStripMenuItem.Name = "openContactsInWordToolStripMenuItem";
+            this.openContactsInWordToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
+            this.openContactsInWordToolStripMenuItem.Text = "Open contacts in Word";
+            this.openContactsInWordToolStripMenuItem.Click += new System.EventHandler(this.openContactsInWordToolStripMenuItem_Click);
             // 
             // logoutToolStripMenuItem
             // 
@@ -280,13 +287,6 @@ namespace GUI_Mail
             this.openInWordToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.openInWordToolStripMenuItem.Text = "Open in Word";
             this.openInWordToolStripMenuItem.Click += new System.EventHandler(this.openInWordToolStripMenuItem_Click);
-            // 
-            // openContactsInWordToolStripMenuItem
-            // 
-            this.openContactsInWordToolStripMenuItem.Name = "openContactsInWordToolStripMenuItem";
-            this.openContactsInWordToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
-            this.openContactsInWordToolStripMenuItem.Text = "Open contacts in Word";
-            this.openContactsInWordToolStripMenuItem.Click += new System.EventHandler(this.openContactsInWordToolStripMenuItem_Click);
             // 
             // Inbox
             // 

@@ -20,6 +20,7 @@ namespace GUI_Mail
 
         private void submit_Click(object sender, EventArgs e)
         {
+            DataWorker.CurrentUser.ChangeSignature(signature.Text);
             Close();
         }
 

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Security.Cryptography;
 using System.Text;
+using System.Windows.Forms.VisualStyles;
 
 namespace GUI_Mail
 {
@@ -98,6 +99,13 @@ namespace GUI_Mail
         {
             var userIndex = users.FindIndex(u => u.Login == CurrentUser.Login);
             users[userIndex].ChangeUsernameAndPassword(username, password);
+            SaveObjects(usersFileName, users);
+        }
+
+        public void ChangeSignature(string signature)
+        {
+            var userIndex = users.FindIndex(u => u.Login == CurrentUser.Login);
+            users[userIndex].ChangeSignature(signature);
             SaveObjects(usersFileName, users);
         }
 
