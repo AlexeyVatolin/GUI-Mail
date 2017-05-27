@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace GUI_Mail
 {
-    public partial class Administration : Form
+    public partial class Administration : MyForm
     {
         public Administration()
         {

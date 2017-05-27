@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace GUI_Mail
 {
-    public partial class About : Form
+    public partial class About : MyForm
     {
         public About()
         {

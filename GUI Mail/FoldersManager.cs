@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace GUI_Mail
 {
-    public partial class FoldersManager : Form
+    public partial class FoldersManager : MyForm
     {
         public FoldersManager()
         {

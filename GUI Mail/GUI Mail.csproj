@@ -101,6 +101,9 @@
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Mail.cs" />
+    <Compile Include="MyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="PersonalizationForm.cs">
       <SubType>Form</SubType>
     </Compile>

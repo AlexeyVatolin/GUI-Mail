@@ -11,7 +11,7 @@ using View = System.Windows.Forms.View;
 
 namespace GUI_Mail
 {
-    public partial class Inbox : Form
+    public partial class Inbox : MyForm
     {
         private List<Mail> mails;
         private string currentFolder;
@@ -39,15 +39,6 @@ namespace GUI_Mail
                 PlaceFolder(folder);
             }
 
-            /*foreach (Button control in Controls.OfType<Button>())
-            {
-                control.BackColor = Color.Gray;
-                control.ForeColor = Color.White;
-            }*/
-        }
-
-        private void Inbox_Load(object sender, EventArgs e)
-        {
             mailList.Columns.Add("Addres from");
             mailList.Columns.Add("Addres to");
             mailList.Columns.Add("Subject");
@@ -64,7 +55,15 @@ namespace GUI_Mail
 
         private void PersonalizationButton_Click(object sender, EventArgs e)
         {
-            new PersonalizationForm().ShowDialog();
+            new PersonalizationForm(this).ShowDialog();
+        }
+
+        public void PerformRefresh()
+        {
+            var inbox = new Inbox();
+            Hide();
+            inbox.ShowDialog();
+            Close();
         }
 
         private void newMessage_Click(object sender, EventArgs e)
@@ -87,6 +86,7 @@ namespace GUI_Mail
             {
                 LoadMails(senderButton.Text);
                 currentFolder = senderButton.Text;
+                DeleteLetter.Visible = currentFolder != "Sent Mail";
             }
         }
 
@@ -187,10 +187,11 @@ namespace GUI_Mail
         private void DeleteLetter_Click(object sender, EventArgs e)
         {
             DataWorker dataWorker = DataWorker.Instance;
-            foreach (ListViewItem item in mailList.CheckedItems)
+            while (mailList.CheckedItems.Count > 0)
             {
-                mailList.Items.Remove(item);
-                dataWorker.DeleteMail(mails[item.Index]);
+                dataWorker.DeleteMail(mails[mailList.CheckedItems[0].Index]);
+                mails.RemoveAt(mailList.CheckedItems[0].Index);
+                mailList.Items.Remove(mailList.CheckedItems[0]);
             }
         }
 
@@ -210,7 +211,7 @@ namespace GUI_Mail
             mails.Clear();
             foreach (var item in dataWorker.GetMails(currentFolder))
             {
-                mailList.Items.Add(new ListViewItem(new[] { item.From, item.Subject }));
+                mailList.Items.Add(new ListViewItem(new[] { item.From, item.To, item.Subject }));
                 mails.Add(item);
             }
         }

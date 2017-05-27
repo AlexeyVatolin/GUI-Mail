@@ -5,7 +5,6 @@ using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Security.Cryptography;
 using System.Text;
-using System.Windows.Forms.VisualStyles;
 
 namespace GUI_Mail
 {
@@ -109,6 +108,13 @@ namespace GUI_Mail
             SaveObjects(usersFileName, users);
         }
 
+        public void ChangeTheme(string theme)
+        {
+            var userIndex = users.FindIndex(u => u.Login == CurrentUser.Login);
+            users[userIndex].ChangeTheme(theme);
+            SaveObjects(usersFileName, users);
+        }
+
         //Проверка существования логина для регистрации
         public bool LoginExist(string login)
         {
@@ -169,7 +175,7 @@ namespace GUI_Mail
             {
                 mails = (List<Mail>)mailsObjects;
             }
-            if (folderName == "Sent Mail")
+            if (folderName == "Sent Mail" || folderName == "Drafts")
             {
                 return
                     mails.Where(mail => mail.From == CurrentUser.Login + "@mymail.com")

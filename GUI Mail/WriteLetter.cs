@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace GUI_Mail
 {
-    public partial class WriteLetter : Form
+    public partial class WriteLetter : MyForm
     {
         public WriteLetter()
         {
@@ -21,6 +21,9 @@ namespace GUI_Mail
 
         private void saveDraft_Click(object sender, EventArgs e)
         {
+            var mail = new Mail(DataWorker.CurrentUser.Login + "@mymail.com", emailTo.Text, subject.Text, letterText.Text, "Draft");
+            DataWorker dataWorker = DataWorker.Instance;
+            dataWorker.SendMail(mail);
             Hide();
         }
 

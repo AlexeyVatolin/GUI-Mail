@@ -14,7 +14,29 @@ namespace GUI_Mail
         public string Subject { get; }
         public string Body { get; }
         public string Folder { get; private set; }
-        //public string Id { get; }
+
+        public override bool Equals(object obj)
+        {
+            if (ReferenceEquals(null, obj))
+                return false;
+            if (ReferenceEquals(this, obj))
+                return true;
+            var mail = obj as Mail;
+            if (mail != null)
+            {
+                if (From == mail.From && To == mail.To && Subject == mail.Subject && Body == mail.Body &&
+                    Folder == mail.Folder)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
 
         public Mail(string from, string to, string subject, string body, string folder)
         {

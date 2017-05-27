@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace GUI_Mail
 {
-    public partial class RegistrationForm : Form
+    public partial class RegistrationForm : MyForm
     {
         public RegistrationForm()
         {

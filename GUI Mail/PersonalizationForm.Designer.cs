@@ -60,11 +60,14 @@
             // changeColor
             // 
             this.changeColor.FormattingEnabled = true;
+            this.changeColor.Items.AddRange(new object[] {
+            "Default",
+            "Green"});
             this.changeColor.Location = new System.Drawing.Point(15, 84);
             this.changeColor.Name = "changeColor";
             this.changeColor.Size = new System.Drawing.Size(121, 21);
             this.changeColor.TabIndex = 2;
-            this.changeColor.Text = "White";
+            this.changeColor.Text = "Default";
             // 
             // label3
             // 

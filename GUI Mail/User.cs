@@ -15,6 +15,7 @@ namespace GUI_Mail
         public string Password { get; private set; }
         public bool IsAdmin { get; internal set; }
         public string Signature { get; private set; }
+        public string Theme { get; private set; }
 
         public User(string username, string login, string password, bool isAdmin = false)
         {
@@ -24,6 +25,7 @@ namespace GUI_Mail
             Password = dataWorker.GetMd5Hash(password);
             IsAdmin = isAdmin;
             Signature = "With best whishes,\nI love you!";
+            Theme = "Default";
         }
 
         public void ChangeUsernameAndPassword(string username, string password)
@@ -36,6 +38,11 @@ namespace GUI_Mail
         public void ChangeSignature(string signature)
         {
             Signature = signature;
+        }
+
+        public void ChangeTheme(string theme)
+        {
+            Theme = theme;
         }
     }
 }

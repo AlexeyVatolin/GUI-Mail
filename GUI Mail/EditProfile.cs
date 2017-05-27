@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace GUI_Mail
 {
-    public partial class EditProfile : Form
+    public partial class EditProfile : MyForm
     {
         public EditProfile()
         {

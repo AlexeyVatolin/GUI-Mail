@@ -306,7 +306,6 @@ namespace GUI_Mail
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Inbox";
             this.Text = "Inbox";
-            this.Load += new System.EventHandler(this.Inbox_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.foldersLayoutPanel.ResumeLayout(false);
