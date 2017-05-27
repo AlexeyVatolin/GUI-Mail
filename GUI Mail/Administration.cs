@@ -9,10 +9,7 @@ namespace GUI_Mail
         public Administration()
         {
             InitializeComponent();
-        }
 
-        private void Administration_Load(object sender, EventArgs e)
-        {
             userList.Columns.Add("Name");
             userList.Columns.Add("Login");
             userList.Columns.Add("Is admin");

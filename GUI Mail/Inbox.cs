@@ -46,6 +46,8 @@ namespace GUI_Mail
             mailList.View = View.Details;
 
             LoadMails("Inbox");
+
+            mailText.AutoSize = true;
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -302,6 +304,8 @@ namespace GUI_Mail
             {
                 Width = 280,
                 Height = 120,
+                MinimumSize = new Size(280, 120),
+                MaximumSize = new Size(280, 120),
                 Text = "Add folder"
             };
             var textLabel = new Label { Location = new Point(13, 13), Size = new Size(65, 13), Text = "Folder name" };

@@ -28,57 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.nameAndSurname = new System.Windows.Forms.TextBox();
-            this.login = new System.Windows.Forms.TextBox();
-            this.password = new System.Windows.Forms.TextBox();
-            this.passwordAgain = new System.Windows.Forms.TextBox();
-            this.register = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.register = new System.Windows.Forms.Button();
+            this.passwordAgain = new System.Windows.Forms.TextBox();
+            this.password = new System.Windows.Forms.TextBox();
+            this.login = new System.Windows.Forms.TextBox();
+            this.nameAndSurname = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // nameAndSurname
-            // 
-            this.nameAndSurname.Location = new System.Drawing.Point(67, 83);
-            this.nameAndSurname.Name = "nameAndSurname";
-            this.nameAndSurname.Size = new System.Drawing.Size(156, 20);
-            this.nameAndSurname.TabIndex = 0;
-            this.nameAndSurname.Text = "Name and Surname";
-            // 
-            // login
-            // 
-            this.login.Location = new System.Drawing.Point(67, 126);
-            this.login.Name = "login";
-            this.login.Size = new System.Drawing.Size(156, 20);
-            this.login.TabIndex = 1;
-            this.login.Text = "Login";
-            // 
-            // password
-            // 
-            this.password.Location = new System.Drawing.Point(67, 168);
-            this.password.Name = "password";
-            this.password.PasswordChar = '•';
-            this.password.Size = new System.Drawing.Size(156, 20);
-            this.password.TabIndex = 2;
-            this.password.Text = "Password";
-            // 
-            // passwordAgain
-            // 
-            this.passwordAgain.Location = new System.Drawing.Point(67, 206);
-            this.passwordAgain.Name = "passwordAgain";
-            this.passwordAgain.PasswordChar = '•';
-            this.passwordAgain.Size = new System.Drawing.Size(156, 20);
-            this.passwordAgain.TabIndex = 3;
-            this.passwordAgain.Text = "Password again";
-            // 
-            // register
-            // 
-            this.register.Location = new System.Drawing.Point(104, 243);
-            this.register.Name = "register";
-            this.register.Size = new System.Drawing.Size(75, 23);
-            this.register.TabIndex = 4;
-            this.register.Text = "Registration";
-            this.register.UseVisualStyleBackColor = true;
-            this.register.Click += new System.EventHandler(this.register_Click);
             // 
             // linkLabel1
             // 
@@ -91,6 +47,50 @@
             this.linkLabel1.Text = "Already have account?";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
+            // register
+            // 
+            this.register.Location = new System.Drawing.Point(104, 243);
+            this.register.Name = "register";
+            this.register.Size = new System.Drawing.Size(75, 23);
+            this.register.TabIndex = 4;
+            this.register.Text = "Registration";
+            this.register.UseVisualStyleBackColor = true;
+            this.register.Click += new System.EventHandler(this.register_Click);
+            // 
+            // passwordAgain
+            // 
+            this.passwordAgain.Location = new System.Drawing.Point(67, 206);
+            this.passwordAgain.Name = "passwordAgain";
+            this.passwordAgain.PasswordChar = '•';
+            this.passwordAgain.Size = new System.Drawing.Size(156, 20);
+            this.passwordAgain.TabIndex = 3;
+            this.passwordAgain.Text = "Password again";
+            // 
+            // password
+            // 
+            this.password.Location = new System.Drawing.Point(67, 168);
+            this.password.Name = "password";
+            this.password.PasswordChar = '•';
+            this.password.Size = new System.Drawing.Size(156, 20);
+            this.password.TabIndex = 2;
+            this.password.Text = "Password";
+            // 
+            // login
+            // 
+            this.login.Location = new System.Drawing.Point(67, 126);
+            this.login.Name = "login";
+            this.login.Size = new System.Drawing.Size(156, 20);
+            this.login.TabIndex = 1;
+            this.login.Text = "Login";
+            // 
+            // nameAndSurname
+            // 
+            this.nameAndSurname.Location = new System.Drawing.Point(67, 83);
+            this.nameAndSurname.Name = "nameAndSurname";
+            this.nameAndSurname.Size = new System.Drawing.Size(156, 20);
+            this.nameAndSurname.TabIndex = 0;
+            this.nameAndSurname.Text = "Name and Surname";
+            // 
             // RegistrationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -102,6 +102,8 @@
             this.Controls.Add(this.password);
             this.Controls.Add(this.login);
             this.Controls.Add(this.nameAndSurname);
+            this.MaximumSize = new System.Drawing.Size(313, 377);
+            this.MinimumSize = new System.Drawing.Size(313, 377);
             this.Name = "RegistrationForm";
             this.Text = "Registration";
             this.ResumeLayout(false);

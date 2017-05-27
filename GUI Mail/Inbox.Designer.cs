@@ -131,6 +131,7 @@ namespace GUI_Mail
             // 
             // button1
             // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.Location = new System.Drawing.Point(452, 12);
             this.button1.Name = "button1";
@@ -141,6 +142,9 @@ namespace GUI_Mail
             // 
             // mailList
             // 
+            this.mailList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.mailList.FullRowSelect = true;
             this.mailList.Location = new System.Drawing.Point(132, 63);
             this.mailList.MinimumSize = new System.Drawing.Size(365, 4);
@@ -223,20 +227,23 @@ namespace GUI_Mail
             // 
             this.mailText.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.mailText.Location = new System.Drawing.Point(0, 0);
-            this.mailText.MinimumSize = new System.Drawing.Size(363, 0);
             this.mailText.Name = "mailText";
             this.mailText.ReadOnly = true;
-            this.mailText.Size = new System.Drawing.Size(363, 149);
+            this.mailText.Size = new System.Drawing.Size(316, 149);
             this.mailText.TabIndex = 14;
             this.mailText.Text = "";
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.AutoSize = true;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.mailText);
-            this.panel1.Location = new System.Drawing.Point(132, 243);
+            this.panel1.Location = new System.Drawing.Point(133, 243);
+            this.panel1.MinimumSize = new System.Drawing.Size(360, 151);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(365, 151);
+            this.panel1.Size = new System.Drawing.Size(364, 154);
             this.panel1.TabIndex = 15;
             // 
             // Refresh
@@ -292,7 +299,7 @@ namespace GUI_Mail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(509, 406);
             this.Controls.Add(this.Username);
             this.Controls.Add(this.DeleteLetter);
@@ -304,6 +311,7 @@ namespace GUI_Mail
             this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.MinimumSize = new System.Drawing.Size(525, 445);
             this.Name = "Inbox";
             this.Text = "Inbox";
             this.menuStrip1.ResumeLayout(false);

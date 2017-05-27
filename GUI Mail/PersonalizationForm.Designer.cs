@@ -90,6 +90,9 @@
             // 
             // signature
             // 
+            this.signature.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.signature.Location = new System.Drawing.Point(15, 185);
             this.signature.Name = "signature";
             this.signature.Size = new System.Drawing.Size(247, 71);
@@ -98,6 +101,7 @@
             // 
             // submit
             // 
+            this.submit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.submit.Location = new System.Drawing.Point(15, 276);
             this.submit.Name = "submit";
             this.submit.Size = new System.Drawing.Size(75, 23);
@@ -108,6 +112,7 @@
             // 
             // cancel
             // 
+            this.cancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.cancel.Location = new System.Drawing.Point(187, 276);
             this.cancel.Name = "cancel";
             this.cancel.Size = new System.Drawing.Size(75, 23);
@@ -129,6 +134,7 @@
             this.Controls.Add(this.changeColor);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.MinimumSize = new System.Drawing.Size(303, 388);
             this.Name = "PersonalizationForm";
             this.Text = "Personalization";
             this.Load += new System.EventHandler(this.PersonalizationForm_Load);

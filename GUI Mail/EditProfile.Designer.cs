@@ -28,37 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.nameAndSurname = new System.Windows.Forms.TextBox();
-            this.password = new System.Windows.Forms.TextBox();
-            this.passwordAgain = new System.Windows.Forms.TextBox();
             this.save = new System.Windows.Forms.Button();
+            this.passwordAgain = new System.Windows.Forms.TextBox();
+            this.password = new System.Windows.Forms.TextBox();
+            this.nameAndSurname = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // nameAndSurname
-            // 
-            this.nameAndSurname.Location = new System.Drawing.Point(63, 50);
-            this.nameAndSurname.Name = "nameAndSurname";
-            this.nameAndSurname.Size = new System.Drawing.Size(156, 20);
-            this.nameAndSurname.TabIndex = 1;
-            this.nameAndSurname.Text = "Name and Surname";
-            // 
-            // password
-            // 
-            this.password.Location = new System.Drawing.Point(63, 93);
-            this.password.Name = "password";
-            this.password.PasswordChar = '•';
-            this.password.Size = new System.Drawing.Size(156, 20);
-            this.password.TabIndex = 3;
-            this.password.Text = "Password";
-            // 
-            // passwordAgain
-            // 
-            this.passwordAgain.Location = new System.Drawing.Point(63, 130);
-            this.passwordAgain.Name = "passwordAgain";
-            this.passwordAgain.PasswordChar = '•';
-            this.passwordAgain.Size = new System.Drawing.Size(156, 20);
-            this.passwordAgain.TabIndex = 4;
-            this.passwordAgain.Text = "Password again";
             // 
             // save
             // 
@@ -70,6 +44,32 @@
             this.save.UseVisualStyleBackColor = true;
             this.save.Click += new System.EventHandler(this.save_Click);
             // 
+            // passwordAgain
+            // 
+            this.passwordAgain.Location = new System.Drawing.Point(63, 130);
+            this.passwordAgain.Name = "passwordAgain";
+            this.passwordAgain.PasswordChar = '•';
+            this.passwordAgain.Size = new System.Drawing.Size(156, 20);
+            this.passwordAgain.TabIndex = 4;
+            this.passwordAgain.Text = "Password again";
+            // 
+            // password
+            // 
+            this.password.Location = new System.Drawing.Point(63, 93);
+            this.password.Name = "password";
+            this.password.PasswordChar = '•';
+            this.password.Size = new System.Drawing.Size(156, 20);
+            this.password.TabIndex = 3;
+            this.password.Text = "Password";
+            // 
+            // nameAndSurname
+            // 
+            this.nameAndSurname.Location = new System.Drawing.Point(63, 50);
+            this.nameAndSurname.Name = "nameAndSurname";
+            this.nameAndSurname.Size = new System.Drawing.Size(156, 20);
+            this.nameAndSurname.TabIndex = 1;
+            this.nameAndSurname.Text = "Name and Surname";
+            // 
             // EditProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -79,6 +79,8 @@
             this.Controls.Add(this.passwordAgain);
             this.Controls.Add(this.password);
             this.Controls.Add(this.nameAndSurname);
+            this.MaximumSize = new System.Drawing.Size(300, 300);
+            this.MinimumSize = new System.Drawing.Size(300, 300);
             this.Name = "EditProfile";
             this.Text = "Edit profile";
             this.ResumeLayout(false);

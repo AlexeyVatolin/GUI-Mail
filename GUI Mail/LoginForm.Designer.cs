@@ -29,49 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
-            this.login = new System.Windows.Forms.TextBox();
-            this.password = new System.Windows.Forms.TextBox();
-            this.signIn = new System.Windows.Forms.Button();
-            this.settings = new System.Windows.Forms.Button();
             this.registration = new System.Windows.Forms.LinkLabel();
+            this.settings = new System.Windows.Forms.Button();
+            this.signIn = new System.Windows.Forms.Button();
+            this.password = new System.Windows.Forms.TextBox();
+            this.login = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // login
-            // 
-            this.login.Location = new System.Drawing.Point(83, 85);
-            this.login.Name = "login";
-            this.login.Size = new System.Drawing.Size(100, 20);
-            this.login.TabIndex = 0;
-            this.login.Text = "Login";
-            // 
-            // password
-            // 
-            this.password.Location = new System.Drawing.Point(83, 128);
-            this.password.Name = "password";
-            this.password.PasswordChar = '•';
-            this.password.Size = new System.Drawing.Size(100, 20);
-            this.password.TabIndex = 1;
-            this.password.Text = "Password";
-            // 
-            // signIn
-            // 
-            this.signIn.Location = new System.Drawing.Point(94, 169);
-            this.signIn.Name = "signIn";
-            this.signIn.Size = new System.Drawing.Size(75, 23);
-            this.signIn.TabIndex = 2;
-            this.signIn.Text = "Sign in";
-            this.signIn.UseVisualStyleBackColor = true;
-            this.signIn.Click += new System.EventHandler(this.signIn_Click);
-            // 
-            // settings
-            // 
-            this.settings.Image = ((System.Drawing.Image)(resources.GetObject("settings.Image")));
-            this.settings.Location = new System.Drawing.Point(227, 13);
-            this.settings.Name = "settings";
-            this.settings.Size = new System.Drawing.Size(45, 45);
-            this.settings.TabIndex = 3;
-            this.settings.UseVisualStyleBackColor = true;
-            this.settings.Click += new System.EventHandler(this.settings_Click);
             // 
             // registration
             // 
@@ -84,6 +47,43 @@
             this.registration.Text = "Registration";
             this.registration.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.registration_LinkClicked);
             // 
+            // settings
+            // 
+            this.settings.Image = ((System.Drawing.Image)(resources.GetObject("settings.Image")));
+            this.settings.Location = new System.Drawing.Point(227, 13);
+            this.settings.Name = "settings";
+            this.settings.Size = new System.Drawing.Size(45, 45);
+            this.settings.TabIndex = 3;
+            this.settings.UseVisualStyleBackColor = true;
+            this.settings.Click += new System.EventHandler(this.settings_Click);
+            // 
+            // signIn
+            // 
+            this.signIn.Location = new System.Drawing.Point(94, 169);
+            this.signIn.Name = "signIn";
+            this.signIn.Size = new System.Drawing.Size(75, 23);
+            this.signIn.TabIndex = 2;
+            this.signIn.Text = "Sign in";
+            this.signIn.UseVisualStyleBackColor = true;
+            this.signIn.Click += new System.EventHandler(this.signIn_Click);
+            // 
+            // password
+            // 
+            this.password.Location = new System.Drawing.Point(83, 128);
+            this.password.Name = "password";
+            this.password.PasswordChar = '•';
+            this.password.Size = new System.Drawing.Size(100, 20);
+            this.password.TabIndex = 1;
+            this.password.Text = "Password";
+            // 
+            // login
+            // 
+            this.login.Location = new System.Drawing.Point(83, 85);
+            this.login.Name = "login";
+            this.login.Size = new System.Drawing.Size(100, 20);
+            this.login.TabIndex = 0;
+            this.login.Text = "Login";
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -94,6 +94,8 @@
             this.Controls.Add(this.signIn);
             this.Controls.Add(this.password);
             this.Controls.Add(this.login);
+            this.MaximumSize = new System.Drawing.Size(300, 300);
+            this.MinimumSize = new System.Drawing.Size(300, 300);
             this.Name = "LoginForm";
             this.Text = "Login";
             this.ResumeLayout(false);

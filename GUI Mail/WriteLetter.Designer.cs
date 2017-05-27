@@ -41,6 +41,8 @@
             // 
             // emailTo
             // 
+            this.emailTo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.emailTo.Location = new System.Drawing.Point(32, 27);
             this.emailTo.Name = "emailTo";
             this.emailTo.Size = new System.Drawing.Size(398, 20);
@@ -49,6 +51,8 @@
             // 
             // subject
             // 
+            this.subject.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.subject.Location = new System.Drawing.Point(32, 53);
             this.subject.Name = "subject";
             this.subject.Size = new System.Drawing.Size(398, 20);
@@ -57,6 +61,9 @@
             // 
             // letterText
             // 
+            this.letterText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.letterText.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.letterText.Location = new System.Drawing.Point(0, 0);
             this.letterText.Name = "letterText";
@@ -66,6 +73,7 @@
             // 
             // send
             // 
+            this.send.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.send.Location = new System.Drawing.Point(32, 292);
             this.send.Name = "send";
             this.send.Size = new System.Drawing.Size(75, 23);
@@ -76,6 +84,7 @@
             // 
             // saveDraft
             // 
+            this.saveDraft.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.saveDraft.Location = new System.Drawing.Point(297, 292);
             this.saveDraft.Name = "saveDraft";
             this.saveDraft.Size = new System.Drawing.Size(75, 23);
@@ -86,6 +95,7 @@
             // 
             // button1
             // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button1.FlatAppearance.BorderSize = 0;
@@ -110,7 +120,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(477, 370);
+            this.ClientSize = new System.Drawing.Size(456, 348);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.saveDraft);
@@ -118,6 +128,7 @@
             this.Controls.Add(this.subject);
             this.Controls.Add(this.emailTo);
             this.Location = new System.Drawing.Point(2, 2);
+            this.MinimumSize = new System.Drawing.Size(472, 387);
             this.Name = "WriteLetter";
             this.Text = "WriteLetter";
             this.panel1.ResumeLayout(false);
